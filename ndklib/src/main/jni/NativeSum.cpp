@@ -10,3 +10,8 @@ extern "C" JNIEXPORT jint JNICALL Java_com_icandothisallday2021_ndklib_NativeWra
 {
     return a + b;
 }
+
+
+extern "C" JNIEXPORT jstring JNICALL Java_com_icandothisallday2021_ndklib_NativeWrapper_nativeString(JNIEnv *env, jobject thiz) {
+    return (*env).NewStringUTF("Hello from JNI !Compiled with ABI ");
+}
