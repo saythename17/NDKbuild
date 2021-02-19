@@ -5,4 +5,8 @@ public class NativeWrapper {
         System.loadLibrary("ndklib");
     }
     public native int nativeSum(int a, int b);
+
+    public native String nativeString();
+
+    public native float[] nativeArray(float[] floats);
 }
